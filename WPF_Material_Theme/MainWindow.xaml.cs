@@ -1,5 +1,5 @@
 ﻿using Syncfusion.SfSkinManager;
-using Syncfusion.Themes.MaterialDark.WPF;
+using Syncfusion.Themes.MaterialLight.WPF;
 using System.Windows;
 using System.Windows.Media;
 
@@ -9,22 +9,22 @@ namespace WPF_Material_Theme
     {
         public MainWindow()
         {
-            //Customizing the MaterialDark theme settings
-            MaterialDarkThemeSettings materialDarkThemeSettings = new MaterialDarkThemeSettings();
-            materialDarkThemeSettings.PrimaryBackground = new SolidColorBrush(Colors.Red);
-            materialDarkThemeSettings.PrimaryForeground = new SolidColorBrush(Colors.Yellow);
-            materialDarkThemeSettings.BodyFontSize = 15;
-            materialDarkThemeSettings.HeaderFontSize = 18;
-            materialDarkThemeSettings.SubHeaderFontSize = 17;
-            materialDarkThemeSettings.TitleFontSize = 17;
-            materialDarkThemeSettings.SubTitleFontSize = 16;
-            materialDarkThemeSettings.FontFamily = new FontFamily("Callibri");
+            //Customizing the MaterialLight theme settings
+            MaterialLightThemeSettings materialLightThemeSettings = new MaterialLightThemeSettings();
+            materialLightThemeSettings.PrimaryBackground = new SolidColorBrush(Colors.Red);
+            materialLightThemeSettings.PrimaryForeground = new SolidColorBrush(Colors.Yellow);
+            materialLightThemeSettings.BodyFontSize = 15;
+            materialLightThemeSettings.HeaderFontSize = 18;
+            materialLightThemeSettings.SubHeaderFontSize = 17;
+            materialLightThemeSettings.TitleFontSize = 17;
+            materialLightThemeSettings.SubTitleFontSize = 16;
+            materialLightThemeSettings.FontFamily = new FontFamily("Callibri");
 
-            //Register the customized MaterialDark theme
-            SfSkinManager.RegisterThemeSettings("MaterialDark", materialDarkThemeSettings);
+            //Register the customized MaterialLight theme
+            SfSkinManager.RegisterThemeSettings("MaterialLight", materialLightThemeSettings);
 
-            //Setting the customized MaterialDark theme to the Window
-            SfSkinManager.SetTheme(this, new Theme("MaterialDark"));
+            //Setting the customized MaterialLight theme to the Window
+            SfSkinManager.SetTheme(this, new Theme("MaterialLight"));
             InitializeComponent();
         }
     }
